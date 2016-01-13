@@ -6,6 +6,7 @@ import markdown from 'metalsmith-markdown';
 import permalinks from 'metalsmith-permalinks';
 import sass from 'metalsmith-sass';
 import htmlMinifier from 'metalsmith-html-minifier';
+import googleAnalytics from 'metalsmith-google-analytics';
 
 Metalsmith(__dirname)
   .use(collections({
@@ -35,5 +36,6 @@ Metalsmith(__dirname)
     pattern: '**/*.html',
     includeDir: 'layouts/includes'
   }))
+  .use(googleAnalytics('UA-46065410-1'))
   .use(htmlMinifier())
   .build(err => { if (err) { console.log(err) }});
