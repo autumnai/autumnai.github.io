@@ -2,7 +2,7 @@
 
 The website is using [Metalsmith][metalsmith] as the static website generator.
 
-[autumn-website]: autumnai.com
+[autumn-website]: http://autumnai.com
 [metalsmith]: https://github.com/metalsmith/metalsmith
 
 ## Build
