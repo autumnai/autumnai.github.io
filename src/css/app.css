@@ -5,6 +5,12 @@
   font-family: Raleway, "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   color: white;
 }
+a {
+  text-decoration: underline;
+}
+a:hover {
+  color: inherit;
+}
 
 #top-nav {
   position: absolute;
@@ -49,14 +55,14 @@
   padding: 4.5rem 4.5rem 5.5rem;
 }
 #product .headline {
-  padding: 0 0 2.5rem;
+  padding: 0 0 3.5rem;
 }
 #product .headline > div > h3 { margin-bottom: 1.5rem; }
 #product .headline > div > p {
   padding-right: 3rem;
   margin: 0;
 }
-#product .features { padding-top: 2.5rem; }
+#product .features { padding-top: 3.5rem; }
 #product .features > div > h4 { margin-bottom: 1.5rem; }
 #product .features > div > p {
   padding: 0 2rem;
@@ -230,7 +236,7 @@
   font-style: italic
 }
 .underline {
-  text-decoration: underline
+  text-decoration: underline;
 }
 .text-align-right {
   text-align: right
