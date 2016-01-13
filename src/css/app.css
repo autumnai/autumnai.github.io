@@ -10,6 +10,7 @@ a {
 }
 a:hover {
   color: inherit;
+  text-decoration: underline;
 }
 
 #top-nav {
@@ -43,11 +44,10 @@ a:hover {
   left: 0;
   right: 0;
   min-height: 62%;
-  height: 62%;
   background: rgb(26,73,105);
 }
 .landing-page-header > div {
-  margin: 12rem auto;
+  margin: 12rem auto 6.5rem;
 }
 
 #product {
@@ -238,11 +238,18 @@ a:hover {
 .underline {
   text-decoration: underline;
 }
+.no-underline {
+  text-decoration: none;
+}
 .text-align-right {
   text-align: right
 }
 .font-color-dark {
   color: #454545
+}
+.margin-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .no-margin {
   margin: 0!important
