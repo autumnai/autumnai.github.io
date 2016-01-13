@@ -11,10 +11,18 @@ To build the website run in the root directory.
 
 ```shell
 > npm install
-> node run build
+> npm run build
 ```
 
 Metalsmith copies the generated files into the `build` directory at the root.
+
+## Deploy
+
+You can deploy the website to autumnai.com via the following call
+
+```
+> npm run deploy
+```
 
 ## License
 

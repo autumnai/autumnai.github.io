@@ -4,7 +4,8 @@
   "description": "Learn how to create a blog with ES6 and Metalsmith.",
   "main": "index.js",
   "scripts": {
-    "build": "babel-node build.js"
+    "build": "babel-node build.js",
+    "deploy": "sh ./deploy.sh"
   },
   "author": "Cameron J Roe <cameronjroe@gmail.com> (http://cameronjroe.com/)",
   "license": "MIT",
