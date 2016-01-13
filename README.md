@@ -10,7 +10,8 @@ The website is using [Metalsmith][metalsmith] as the static website generator.
 To build the website run in the root directory.
 
 ```shell
-node run build
+> npm install
+> node run build
 ```
 
 Metalsmith copies the generated files into the `build` directory at the root.
