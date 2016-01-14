@@ -456,3 +456,20 @@ div.border.transparent {
 .overlay-fade-in:hover .image-overlay-content { opacity: 1; }
 .overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button { opacity: 1; }
 .overlay-fade-in:hover p { transition-delay: 0.1s; }
+
+#impressum .vcard li, #impressum .vcard span, #impressum .vcard a {
+  color: #454545 !important;
+}
+#impressum .vcard a {
+  display: inline-block !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+}
+#impressum .vcard {
+  padding: 2.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+}
+#impressum .organization {
+  padding: 4.5rem 0;
+}
