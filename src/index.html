@@ -2,66 +2,92 @@
 layout: index.liquid
 ---
 <div id="top-nav" class="row">
-<div class="small-6 columns">
-  <h1 class="font-weight-900 white">
-    <img src="images/autumn.logo.png" alt="Autumn Logo" />Autumn
-  </h1>
-</div>
-<div class="small-6 columns">
-  <ul class="menu simple align-right">
-    <li><a class="no-underline" href="#community">Community</a></li>
-    <li><a class="no-underline" href="#product">Product</a></li>
-  </ul>
-</div>
+  <div class="small-6 columns">
+    <h1 class="font-weight-900 white">
+      <img src="images/autumn.logo.png" alt="Autumn Logo" />Autumn
+    </h1>
+  </div>
+  <div class="small-6 columns">
+    <ul class="menu simple align-right">
+      <li><a class="no-underline" href="#community">Community</a></li>
+      <li><a class="no-underline" href="#product">Documentation</a></li>
+      <li><a class="no-underline" href="https://github.com/autumnai/leaf">Code</a></li>
+    </ul>
+  </div>
 </div>
 <div id="home" class="landing-page-header row column expanded">
   <div class="row margin-center">
     <div class="small-11 medium-11 columns small-centered text-left">
       <h2 class="white">> git clone https://github.com/autumnai/leaf.git</h2>
       <div class="border left white"></div>
-      <h4 class="white">Autumn maintains the open Machine
-        Intelligence platform, <a class="white underline" href="https://github.com/autumnai/leaf">Leaf</a>.<br>
-        Build state-of-the-art Machine Intelligence applications and deploy them to Servers, Desktops, Smartphones,
-        Embedded Systems, etc.<h4>
+      <h4 class="white">Leaf - the Hacker's Machine Intelligence Framework.<br>
+        Build and Deploy Maintainable, Portable, Fast Machine Learning
+        Applications.<br/><br/>
+        > Run Examples
     </div>
   </div>
 </div>
+<div class="row column expanded" style="background: rgb(32, 89, 126)">
+<div name="news" id="news" class="row" style="margin: auto">
+  <div class="small-12 medium-4 columns">
+    <p class="news-box">
+    Latest commit (17min ago)<br/>
+    feat/tensor: add various benchmarks
+    <span style="display: inline-block">- by Various Salvo</span>
+    </p>
+  </div>
+  <div class="small-12 medium-4 columns">
+    <p class="news-box">Leaf 0.2 Release</p>
+  </div>
+  <div class="small-12 medium-4 columns">
+    <p class="news-box">Leaf Performance Benchmarks</p>
+  </div>
+</div>
+</div>
 <div name="product" id="product" class="row expanded">
   <div class="small-12 medium-11 small-centered">
-    <div class="headline row columns margin-center text-center">
-      <div class="small-12 medium-6 column">
-        <h3 class="font-color-dark text-left">What is Machine Intelligence and Why Leaf?</h3>
-        <p class="text-left font-color-dark">
-        Machine Intelligence is concerned with algorithms through which
-        machines can learn about their environment. These machines
-        are able to solve complex and often narrow problems very
-        efficiently.<br/>
-        <br/>
-        Leaf is the platform with which these Machine Intelligence
-        applications can be created. Leaf is a flexible, modular
-        and portable Framework for numeric computations and can be used
-        for many powerful Machine Intelligence paradigms,
-        not only e.g. Deep Learning. We embrace Rust, a language which is
-        very well suited for current state-of-the-art and future Machine
-        Intelligence. It allows for the performance,
-        memory-security, and extensibility, that other frameworks
-        (TensorFlow, Caffe, Theano) only gain by combining high-level
-        languages (Python, Lua) with low-level languages (C, C++).
-        </p>
+    <div class="row columns margin-center text-center">
+      <div class="small-12 column">
+        <h2 style="color: rgb(32,88,126)" class="font-color-dark text-center font-weight-600">The Autumn Architecture</h2>
+        <div class="border center"></div>
       </div>
-      <div class="small-12 medium-6 column">
+      <div class="small-12 medium-8 columns">
+        <div style="width:100%; height:500px" id="svg-architecture">
+          <img src="images/autumn_leaf_collenchyma_architecture.svg" alt="Autumn Leaf Collenchyma" />
+        </div>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <h4 class="font-color-dark text-left">Autumn | Abstract</h4>
+        <p class="font-color-dark text-left">Autumn is a modular, portable, end-to-end Platform
+        engineered for developing performant Machine Intelligence applications.
+        It consits currently of two Frameworks Collenchyma and Leaf.</p>
+        <br/>
+        <h4 class="font-color-dark text-left">Leaf</h4>
+        <p class="font-color-dark text-left">Leaf is an imperative, expressive,
+        cross-platform Machine Intelligence Framework. Its clear
+        architecture keeps it maintainable, easy-to-use and extendable e.g. with
+        the latest research for cutting-edge-performance.</p>
+        <br/>
+        <h4 class="font-color-dark text-left">Collenchyma</h4>
+        <p class="font-color-dark text-left">Collenchyma is a portable,
+        platform-agnostic, high-performance computation Framework. Applications
+        build with Collenchyma can be deployed and executed
+        in parallel on one or many hetereogenous devices on any host machine.</p>
+      </div>
+      <div class="small-12 column">
         <div class="quote-wrapper row">
-          <div class="small-2 large-2 columns testimonial">
+          <div class="small-2 large-1 columns testimonial">
             <div class="quote-marks">&#8220;</div>
           </div>
           <div class="small-10 large-10 columns testimonial">
             <div class="quote">
               <p class="font-color-dark">
               Leaf was influenced by the brilliant people behind
+              <a class="font-color-dark" href="http://torch.ch/">Torch</a>,
               <a class="font-color-dark" href="http://caffe.berkeleyvision.org/">Caffe</a>,
               <a class="font-color-dark" href="https://tensorflow.org/">Tensorflow</a>,
               <a class="font-color-dark" href="https://rust-lang.org/">Rust</a>
-              and numerous research papers. With Leaf we try to
+              and numerous research papers. With Autumn we try to
               transcend the opposing concepts in Machine Intelligence, bringing
               research and applications closer together.
               </p>
@@ -69,145 +95,94 @@ layout: index.liquid
             </div>
           </div>
           <div class="small-12 column text-right">
-            <p class="font-color-dark">- Leaf Founders, <a
+            <p class="font-color-dark">- Autumn Founders, <a
                class="font-color-dark" href="https://twitter.com/mjhirn">MJ</a> and <a
                                        class="font-color-dark" href="https://twitter.com/hobofan">Max</a></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="row row-border border expanded"></div>
-    <div class="row features margin-center small-up-1 medium-up-3">
-      <div class="column text-center">
-        <h4 class="font-color-dark">Flexible + Performant</h4>
-        <p class="font-color-dark">Leaf aims to be a flexible Machine
-        Learning Framework while maintaining unachieved performance. Minimal
-        dependencies and engineering Leaf from the ground up brings
-        Leaf close to optimal efficiency. While you can flexible build
-        complex machine learning models through composing layers. We
-        designed Leaf and other projects to be as modular as possible, which
-        means you can bring in new functionality through plugins others
-        provide and are able to easily extend Leaf and the ecosystem.
-        </p>
-      </div>
-      <div class="column text-center">
-        <h4 class="font-color-dark">Efficient + Scaleable</h4>
-        <p class="font-color-dark">
-        Leaf is truly portable and scalable. We designed Leaf, so that
-        you can deploy your networks on various machines and platforms.
-        Test your networks on your local desktop, train the same network on
-        your servers and use the trained network on the smartphones
-        of your users. Models expressed with Leaf efficiently use the
-        available hardware resources on the machine. No matter if it is a
-        tiny memory restricted device or a multi-GPU server, you just
-        deploy your network and Leaf takes care of the rest.
-        </p>
-      </div>
-      <div class="column text-center">
-        <h4 class="font-color-dark">Research + Production</h4>
-        <p class="font-color-dark">
-        Leaf is made for use in research and production. Researchers gain
-        the advantage of an expressive, performant and easy-to-use
-        Framework to develop new algorithms. Rust's package manager and
-        Leaf's modular design lets you publish your work which makes it
-        usable by other researchers or companies. Leaf tries to implement
-        the latest research successes, bringing research and production
-        closer together. No need to rewrite your network while going from
-        testing to production.
-        </p>
-      </div>
-    </div>
   </div>
 </div>
 <div name="consulting" id="consulting" class="row expanded">
   <div class="small-12 medium-8 small-centered columns text-center">
+    <h2 class="font-color-dark font-weight-600">Autumn Features</h2>
+    <br/>
     <p class="font-color-dark">
-    We assist companies with know-how and hands on assistance in
-    Machine Intelligence and Deep Learning. We work together with
-    Data Science-, Engineering- and Business-teams to transfer knowledge,
-    help integrating Machine Learning and building proof of concepts.
+    Build maintainable Machine Intelligence applications, that can be deployed
+    into the cloud for production, executed for testing on your desktop and
+    shipped to smartphones, IoT and embedded devices. No code changes required.
     </p>
+    <div style="padding: 2.5rem 0; margin: 0 auto" class="row">
+      <div style="padding-top: 1rem" class="small-12 medium-4 columns">
+        <h4 class="font-color-dark">PERFORMANT</h4>
+        <div class="border center"></div>
+        <p class="font-color-dark">Autumn enables developers to quickly build
+        maintainable applications, train the models and efficiently
+        execute them in production, reducing development and maintainance
+        costs and increasing productivity.</p>
+      </div>
+      <div style="padding-top: 1rem" class="small-12 medium-4 columns">
+        <h4 class="font-color-dark">PRACTICAL</h4>
+        <div class="border center"></div>
+        <p class="font-color-dark">Autumn enables developers to understand the
+        whole stack, write maintainable plugins and safely implement the latest
+        research outcomes into their applications.</p>
+      </div>
+      <div style="padding-top: 1rem" class="small-12 medium-4 columns">
+        <h4 class="font-color-dark">PORTABLE</h4>
+        <div class="border center"></div>
+        <p class="font-color-dark">Autumn gives you the choice to run, deploy
+        and test your Machine Intelligence applications whereever you want. Any
+        machine, any OS, any hardware.</p>
+      </div>
+    </div>
   </div>
 </div>
 <div name="use" id="use" class="row expanded">
-  <div class="small-12 headline columns text-center">
-    <h2 class="font-color-dark">
-      Machine Intelligence Applications
-    </h2>
-    <br>
-    <p class="font-color-dark">What you can do with Machine Intelligence and
-    Leaf: <strong class="font-color-dark">By Verticals</strong></p>
-  </div>
-  <div style="margin: 0 auto;" class="row small-up-1 medium-up-3">
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/insurance.jpg" alt="Insurance Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Insurance</h2>
+  <div class="small-12 medium-10 small-centered columns text-center">
+    <h2 class="font-color-dark font-weight-600">Autumn Use Cases</h2>
+    <br/>
+    <p class="font-color-dark">
+      Here are some of the ways developers and companies can use the Autumn
+      Platform for building Machine Intelligence driven applications.
+    </p>
+    <div style="padding: 2.5rem 0; margin: 0 auto" class="row small-uncollapsed">
+      <div style="padding-top: 1rem" class="small-12 medium-3 columns">
+        <div style="padding: 1.5rem; border: 1px solid rgb(32,89,126)">
+          <h4 class="font-color-dark">PERFORMANT</h4>
+          <div class="border center"></div>
+          <p class="font-color-dark">Autumn enables developers to quickly build
+          maintainable applications, train the models and efficiently
+          execute them in production, reducing development and maintainance
+          costs and increasing productivity.</p>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/agri.jpg" alt="Agriculture Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Agriculture</h2>
+      <div style="padding-top: 1rem" class="small-12 medium-3 columns">
+        <div style="padding: 1.5rem; border: 1px solid rgb(32,89,126)">
+          <h4 class="font-color-dark">PRACTICAL</h4>
+          <div class="border center"></div>
+          <p class="font-color-dark">Autumn enables developers to understand the
+          whole stack, write maintainable plugins and safely implement the latest
+          research outcomes into their applications.</p>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/pharma.jpg" alt="Pharma Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Pharma</h2>
+      <div style="padding-top: 1rem" class="small-12 medium-3 columns">
+        <div style="padding: 1.5rem; border: 1px solid rgb(32,89,126)">
+          <h4 class="font-color-dark">PORTABLE</h4>
+          <div class="border center"></div>
+          <p class="font-color-dark">Autumn gives you the choice to run, deploy
+          and test your Machine Intelligence applications whereever you want. Any
+          machine, any OS, any hardware.</p>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/industry.jpg" alt="Industry Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Industry</h2>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/finance.jpg" alt="Finance Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Finance</h2>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/retail.jpg" alt="Retail Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Retail</h2>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/telco.jpg" alt="Telecommunication Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Telecommunication</h2>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/media.jpg" alt="Media Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Media</h2>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="image-wrapper overlay-fade-in">
-        <img src="images/tech.jpg" alt="Tech Machine Intelligence">
-        <div class="image-overlay-content">
-          <h2>Tech</h2>
+      <div style="padding-top: 1rem" class="small-12 medium-3 columns">
+        <div style="padding: 1.5rem; border: 1px solid rgb(32,89,126)">
+          <h4 class="font-color-dark">AI + IoT</h4>
+          <div class="border center"></div>
+          <p class="font-color-dark">Autumn gives you the choice to run, deploy
+          and test your Machine Intelligence applications whereever you want. Any
+          machine, any OS, any hardware.</p>
         </div>
       </div>
     </div>
@@ -215,37 +190,18 @@ layout: index.liquid
 </div>
 <div name="community" id="community" class="row expanded">
   <div class="small-12 medium-3 columns">
-    <h2>Community</h2>
-    <div class="border left white"></div>
-    <p>
+    <h2 class="font-color-dark font-weight-600">Community</h2>
+    <div class="border left transparent"></div>
+    <p class="font-color-dark">
     We love the ML community.
     All our work is free for everyone, distributed trough the MIT/Apache 2.0
     licence. Hit us up at the #rust-machine-learning IRC at irc.mozilla.org,
-    on the <a class="white" href="https://gitter.im/autumnai/leaf">Leaf gitter</a>
+    on the <a class="font-color-dark" href="https://gitter.im/autumnai/leaf">Leaf gitter</a>
     or on one of our talks.
     </p>
   </div>
   <div class="small-12 medium-9 columns">
     <div class="row small-up-1 medium-up-3">
-      <div class="column">
-        <div class="github-card" data-github="autumnai/leaf" data-width="400" data-height="" data-theme="medium"></div>
-      </div>
-      <div class="column">
-        <div class="github-card" data-github="autumnai/collenchyma" data-width="400" data-height="" data-theme="medium"></div>
-      </div>
-      <div class="column">
-        <a class="github-card-link" href="https://github.com/autumnai">See all repos on Github</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div name="reputation" id="reputation" class="row expanded">
-  <div class="small-12 columns text-center">
-    <h2 class="font-color-dark">What others say about Autumn</h2>
-    <div style="border-color: #454545" class="border"></div>
-  </div>
-  <div class="small-12 columns">
-    <div id="tweets" class="row small-up-1 medium-up-3">
       <div class="column">
         <blockquote class="twitter-tweet" data-cards="hidden" lang="en">
           <p lang="en" dir="ltr"><a href="https://t.co/mm24ABBhIz">https://t.co/mm24ABBhIz</a> <a href="https://twitter.com/hashtag/HPC?src=hash">#HPC</a> with <a href="https://twitter.com/hashtag/OpenCL?src=hash">#OpenCL</a> in <a href="https://twitter.com/rustlang">@rustlang</a>. From the outstanding team in <a href="https://t.co/mSZVSH2ObG">https://t.co/mSZVSH2ObG</a></p>&mdash; Cristián Antuña (@AntuniaCepellot) <a href="https://twitter.com/AntuniaCepellot/status/674337903586222081">December 8, 2015</a>
@@ -264,60 +220,81 @@ layout: index.liquid
     </div>
   </div>
 </div>
-<div id="footer" class="row small-up-1 medium-up-3 expanded">
-  <div class="columns">
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-      <form action="//storeness.us11.list-manage.com/subscribe/post?u=676467fe256940259725b9989&amp;id=7cc1e166a0" method="post" id="mc-embedded-subscribe-form" 
-                                                                                                                                 name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <label for="mce-EMAIL">
-            <h4 class="font-weight-900 white">Subscribe To Progress</h4>
-            <p class="white">Monthly Newsletter</p>
-          </label>
-          <div class="row">
-            <div class="small-12 columns">
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email" required>
-            </div>
-            <div class="small-12 columns">
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button postfix">
-            </div>
+<div style="background: rgb(32, 89, 126)" name="reputation" id="reputation" class="row expanded">
+  <div class="small-12 columns text-center">
+    <h2 class="font-weight-600">Let's Hack Together. Bring AI to Everyone.</h2>
+    <div class="border white"></div>
+    <p class="text-center">Run examples online, clone Leaf on
+    Github or click on 'Get Started!' to install and build your own AI
+    application.</p><br/><br/>
+    <p class="text-center">GET STARTED!</p>
+  </div>
+</div>
+<div id="footer" class="row expanded">
+  <div class="small-12 columns">
+    <div style="margin: 0 auto" class="row">
+      <div class="small-12 medium-4 columns">
+        <p class="font-weight-900">Updates</p>
+        <ul class="menu vertical full-width">
+          <li>Subscribe to our monthly newsletter</li>
+          <li>
+            <form action="//storeness.us11.list-manage.com/subscribe/post?u=676467fe256940259725b9989&amp;id=7cc1e166a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div style="margin: 0 auto;" class="row small-collapse">
+                <div class="small-8 columns">
+                  <input style="height:2.5rem;box-shadow:none;transition:none" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email" required>
+                </div>
+                <div class="small-3 columns">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button postfix">
+                </div>
+                <div class="small-1 columns"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_676467fe256940259725b9989_7cc1e166a0" tabindex="-1" value="">
+              </div>
+              <div class="clear"></div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="small-12 medium-8 columns">
+        <div class="row small-up-3">
+          <div class="column">
+            <p class="font-weight-900">Autumn</p>
+            <ul class="menu vertical full-width">
+              <li><a href="mailto:press@autumnai.com">Blog</a></li>
+              <li><a href="mailto:press@autumnai.com">Press</a></li>
+              <li><a href="mailto:hi@autumnai.com">Contact</a></li>
+            </ul>
           </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;">
-            <input type="text" name="b_676467fe256940259725b9989_7cc1e166a0" tabindex="-1" value="">
+          <div class="column">
+            <p class="font-weight-900">Resources</p>
+            <ul class="menu vertical full-width">
+              <li><a href="mailto:press@autumnai.com">Documentation</a></li>
+              <li><a href="mailto:hi@autumnai.com">Examples</a></li>
+              <li><a href="https://twitter.com/autumn_eng">Community Support</a></li>
+              <li><a href="https://github.com/autumnai">Enterprise Support</a></li>
+            </ul>
           </div>
-          <div class="clear"></div>
+          <div class="column">
+            <p class="font-weight-900">Connect</p>
+            <ul class="menu vertical full-width">
+              <li><a href="https://twitter.com/autumn_eng">Twitter</a></li>
+              <li><a href="https://twitter.com/autumn_eng">Medium</a></li>
+              <li><a href="https://github.com/autumnai">Github</a></li>
+            </ul>
+          </div>
         </div>
-      </form>
-      <!--End mc_embed_signup-->
+      </div>
     </div>
   </div>
-  <div class="columns">
-    <a class="twitter-timeline" href="https://twitter.com/autumn_eng" data-widget-id="686540584484507648">Tweets by @autumn_eng</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
-  <div class="columns">
-    <div itemscope itemtype="http://schema.org/Organization">
-      <ul class="menu vertical vcard full-width">
-        <meta itemprop="name" content="Storeness"/>
-        <li class="fn org" itemprop="legalName">Autumn</li>
-        <li class="locality" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="addressLocality">Kreuzberg, Berlin</span>
-        </li>
-        <li>&nbsp;</li>
-        <li class="email" itemprop="email">contact@autumnai.com</li>
-        <li class="email">DE295073789 | HBR 28677</li>
-        <li class="email"><a class="no-underline" href="impressum.html">Impressum</a></li>
-      </ul>
-      <br/>
-      <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/autumn_eng">Follow @Autumn_eng</a>
-      <a class="github-button" href="https://github.com/autumnai" aria-label="Follow @autumnai on GitHub">Follow @autumnai</a>
-    </div>
+  <div class="last-line small-12 columns">
+    <p class="text-center" style="font-size: 0.8rem; font-weight: 100">
+    © 2016 Autumn | DE295073789 | HBR 28677 | <a class="white no-underline" href="impressum.html">Impressum</a>
+    </p>
   </div>
 </div>
 <script src="js/vendor/libraries.min.js"></script>
 <script src="js/vendor/foundation.min.js"></script>
-<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.2.5/svg.min.js"></script>
+<script src="js/vendor/architecture.js"></script>
