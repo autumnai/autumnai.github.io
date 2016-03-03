@@ -38,19 +38,38 @@ a:hover {
   text-decoration: underline;
 }
 
-.landing-page-header {
+#home {
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   min-height: 62%;
-  background: rgb(26,73,105);
+  background: rgb(37, 183, 235);
 }
-.landing-page-header > div {
+#home > div {
   margin: 12rem auto 6.5rem;
+}
+
+#news {
+  background: rgb(19, 156, 205);
 }
 #news .news-box {
   padding: 1.5rem 0;
+  height: 130px;
+}
+#news .news-box-link {
+  text-decoration: none;
+}
+#news .news-box-link:hover > div {
+  background: rgb(29, 80, 114);
+}
+#news #commit-message {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding-right: 2em;
 }
 
 #product {
@@ -109,8 +128,10 @@ a:hover {
 }
 
 #consulting {
+  border-top: 2px solid #DAD295;
+  border-bottom: 2px solid #DAD295;
   background: rgb(227,221,175);
-  padding: 2.5rem 0;
+  padding: 3.5rem 0;
 }
 #consulting p {
   font-weight: 200;
@@ -126,35 +147,10 @@ a:hover {
 
 #community {
   padding: 3.5rem;
+  background: rgb(37, 183, 235);
+  border-top: 2px solid rgb(19, 156, 205);
 }
-#community #ghcard-autumnai-1 {
-  margin: 0 0.5rem;
-  width: 100%;
-}
-#community #ghcard-autumnai-2 {
-  margin: 0 0.5rem;
-  width: 100%;
-}
-#community .github-card-link {
-  text-align: center;
-  border-radius: 5px;
-  margin: 0 0.5rem;
-  background: white;
-  color: #555;
-  width: 100%;
-  display: inline-block;
-  padding: 5rem 0;
-  position: relative;
-}
-
-#reputation {
-  background: rgb(255, 255, 255);
-  padding: 4.5rem 1.5rem 5.5rem;
-}
-#reputation iframe {
-  display: inline-block;
-}
-#reputation #tweets {
+#community #tweets {
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,6 +158,7 @@ a:hover {
 #footer {
   padding: 4.5rem 0 1rem;
   background: rgb(26,73,105);
+  border-top: 2px solid #143752;
 }
 #footer #mc-embedded-subscribe {
   width: 100%;
@@ -238,6 +235,7 @@ a:hover {
 .x-bold-font-weight {
   font-weight: 900
 }
+.font-size-inherit { font-size: inherit }
 .font-italic {
   font-style: italic
 }
@@ -247,11 +245,26 @@ a:hover {
 .no-underline {
   text-decoration: none;
 }
+.no-underline:hover {
+  text-decoration: none;
+}
 .text-align-right {
   text-align: right
 }
 .font-color-dark {
   color: #454545
+}
+.font-color-light-blue {
+  color: rgb(37, 183, 235);
+}
+.font-color-light-brown {
+  color: rgb(227,221,175);
+}
+div.border.font-color-dark {
+  border-color: #454545
+}
+div.border.font-color-light-blue {
+  border-color: rgb(19, 156, 205);
 }
 .margin-center {
   margin-left: auto !important;
@@ -325,6 +338,18 @@ a:hover {
 .phrase {
   line-height: height-gen(2)
 }
+.cbutton {
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid;
+  text-decoration: none;
+}
+.cbutton.font-color-light-blue:hover {
+  border-color: rgb(27, 163, 205);
+}
+.cbutton.font-color-light-blue {
+  border-color: rgb(37, 183, 235);
+}
 .button.special-button {
   cursor: pointer;
   background-color: #FC8506;
@@ -384,6 +409,9 @@ div.border.dark {
 div.border.left {
   margin: 2rem 0
 }
+div.border.right {
+  margin: 2rem 0 2rem auto;
+}
 div.border.transparent {
   border-bottom-color: transparent
 }
@@ -440,17 +468,21 @@ div.border.transparent {
 .overlay-fade-in p {
   letter-spacing: 0.15em;
   color: #f4f4f4;
-  font-size: 28px;
+  font-size: 1rem;
   opacity: 0;
   transition: all 0.2s linear;
 }
-.overlay-fade-in img { transition: transform 0.2s ease-in-out; }
+.overlay-fade-in img {
+  transition: transform 0.2s ease-in-out;
+  height: 100%;
+  max-width: initial;
+}
 .overlay-fade-in .image-overlay-content {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.45);
   transition: all 0.4s ease-in-out;
 }
-.overlay-fade-in h2 {
+.overlay-fade-in h4 {
   color: #f2f2f2;
   font-size: 1.8rem;
   margin-top: 27.5%;
@@ -478,4 +510,13 @@ div.border.transparent {
 }
 #impressum .organization {
   padding: 4.5rem 0;
+}
+
+.label.radius {
+  border-radius: 2px;
+  cursor: inherit;
+}
+
+.label.white {
+  background: white;
 }
