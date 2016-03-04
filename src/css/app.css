@@ -71,6 +71,10 @@ a:hover {
   text-overflow: ellipsis;
   padding-right: 2em;
 }
+#news select { color: #454545 }
+#news select:hover { color: #454545 }
+#news select option { color: #454545 }
+#news select option:hover { color: #454545 }
 
 #product {
   background: rgb(255, 255, 255);

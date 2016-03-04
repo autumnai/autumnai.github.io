@@ -10,7 +10,17 @@ fetch('https://raw.githubusercontent.com/autumnai/deep-learning-benchmarks/maste
   return response.json()
 }).then(function(json) {
   layout.title = '<b>Performance Benchmarks for Deep Learning Frameworks</b><br> (lower is better)'
-  layout.barmode = 'stack'
+  layout.barmode = 'stack';
+
+  let machine_option = document.getElementById('machine');
+
+  for (var key of Object.keys(json)) {
+    var option = document.createElement("option");
+        option.text = `${json[key].devices.length}x ${json[key].name} (${json[key].type})`;
+        option.value = key;
+
+    machine_option.add(option, null);
+  }
 
   let models = json['nvidia-titan-x'].models;
 
