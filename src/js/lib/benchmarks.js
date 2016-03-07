@@ -2,6 +2,14 @@ let forward_marker = { color: 'rgb(29, 80, 114)' };
 let backward_marker = { color: 'rgb(37, 183, 235)' }
 let memory_marker = { color: 'rgb(227,221,175)' }
 
+export function sortModel(model) {
+  let sorted = model.frameworks.sort(function (a, b) {
+    return a.forward - b.forward
+  })
+  model.frameworks = sorted;
+  return model;
+}
+
 export function getFrameworks(model) {
   return model.frameworks.map(function (frm) {
     return `${frm.name} v${frm.version} (${frm.libraries.map(function(lib) { return `${lib.name} v${lib.version}` }).join(', ')})`
@@ -31,6 +39,7 @@ export function getFrameworksMemory(model) {
 }
 
 export function getTrace(counter, model) {
+  model = sortModel(model);
   let frameworks = getFrameworks(model);
   let forward = getFrameworksForward(model);
   let backward = getFrameworksBackward(model);
