@@ -1,3 +1,4 @@
+require('es6-promise').polyfill();
 import plotly from 'plotly.js'
 import * as benchmarks from './lib/benchmarks.js'
 

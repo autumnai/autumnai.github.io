@@ -55,7 +55,18 @@ Metalsmith(__dirname)
           }
         }
       ]
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+      }),
+      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false
+        }
+      })
+    ]
   }))
   .use(htmlMinifier())
   .build(err => { if (err) { console.log(err) }});
