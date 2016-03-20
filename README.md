@@ -1,9 +1,10 @@
 # The [Autumn Website][autumn-website]
 
-The website is using [Metalsmith][metalsmith] as the static website generator.
+The website is using [React-Static-Boilerplate][react-static] + Webpack as the
+static website generator.
 
 [autumn-website]: http://autumnai.com
-[metalsmith]: https://github.com/metalsmith/metalsmith
+[react-static]: https://github.com/koistya/react-static-boilerplate
 
 ## Build
 
@@ -11,10 +12,10 @@ To build the website run in the root directory.
 
 ```shell
 > npm install
-> npm run build
+> npm run start
 ```
 
-Metalsmith copies the generated files into the `build` directory at the root.
+The generated files are copied into the `build` directory at the root-level.
 
 ## Deploy
 
