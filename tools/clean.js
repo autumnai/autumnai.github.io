@@ -11,4 +11,6 @@ import fs from './lib/fs';
 export default task(async function clean() {
   await del(['build/*', '!build/.git'], { dot: true });
   await fs.mkdir('build');
+  await fs.mkdir('static/leaf');
+  await fs.mkdir('static/leaf/book');
 });
